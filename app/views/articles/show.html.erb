@@ -1,0 +1,14 @@
+<h1>
+  <%= @article.title %>
+  <%= link_to edit_article_path do %>
+    <i class="fas fa-pencil-alt"></i>
+  <%end  %>
+  <%= link_to article_path, method: :delete do %>
+    <i class="fas fa-trash-alt"></i>
+  <%end  %>
+</h1>
+
+
+<p><%= @article.content %></p>
+
+
